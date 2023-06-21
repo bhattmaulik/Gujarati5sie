@@ -1,0 +1,13 @@
+Package: Gujarati5sie
+Type: Package
+Title: Gujarati 5 Special Indian Edition
+Version: 0.1.0
+Author: Maulik Bhatt
+Maintainer: Maulik Bhatt <gmail@maulikbhatt.com>
+Description: Bring datasets used in Damodar Gujarati's book into R
+License: GPL (>= 3)
+Encoding: UTF-8
+LazyData: true
+Depends: 
+    R (>= 2.10)
+RoxygenNote: 7.1.2
