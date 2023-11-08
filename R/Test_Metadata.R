@@ -4,7 +4,7 @@
 #----Packages----####
 library(readxl)
 datafile <-
-     "G:/Maulik/Reference/Econometrics Learning/Gujarati_Datasets/GujaratiDatasetsFinal.xlsx"
+     here::here("data-raw","GujaratiDatasetsFinal.xlsx")
 Table7_12_metadata <- read_excel(datafile, sheet = "Table7.12", range = "H1:I7")
 get_table_metadata <- function(metadata){
      paste0(readLines(textConnection(tabular(metadata))))

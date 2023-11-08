@@ -3,7 +3,7 @@ library(tidyverse)
 library(readxl)
 #usethis::use_data(DATASET, overwrite = TRUE)
 datafile <-
-     "G:/Maulik/Reference/Econometrics Learning/Gujarati_Datasets/GujaratiDatasetsFinal.xlsx"
+     here::here("data-raw","GujaratiDatasetsFinal.xlsx")
 Table1.1 <-
      read_excel(datafile,
                 sheet = "Table1.1",
@@ -109,7 +109,7 @@ Table3.8 <-
                 col_names = TRUE)
 Table5.5 <-
      read_excel(datafile,
-                sheet = "Table5.5",
+                sheet = "Table5.5_Start",
                 range = "A2:B53",
                 col_names = TRUE)
 Table5.6 <-
